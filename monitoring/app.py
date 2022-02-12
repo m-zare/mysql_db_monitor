@@ -23,6 +23,7 @@ def create_app():
         for item in dbs:
             connection = MySQLConnection()
             result = ""
+            msg = {}
             msg = {"Database": item["database"], "Hostname": item['host']}
             try:
                 connection = connect(
