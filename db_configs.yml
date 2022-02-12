@@ -1,0 +1,8 @@
+- host: localhost
+  database: local_database
+  username: username
+  password: password
+# - host: 10.100.100.10
+#   database: remote_database
+#   username: username
+#   password: password
