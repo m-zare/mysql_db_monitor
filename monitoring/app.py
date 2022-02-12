@@ -18,7 +18,7 @@ def create_app():
 
     @app.route("/healthcheck")
     def health_database_status():
-        dbs = read_yml("db_configs.yml")
+        dbs = read_yml(app.root_path+"/db_configs.yml")
         response = []
         for item in dbs:
             connection = MySQLConnection()
